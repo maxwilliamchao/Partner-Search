@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Results for <%= title %></title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="searchBar" class="searchContainer">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="input-group">
+                <input type="text" class="form-control" id="searchInput" placeholder="What are you searching for today?">
+                <span class="input-group-btn go">
+                  <button class="btn btn-panel" type="button" id="search">Go</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <% include templates/nav.ejs %>
+        <p>Available Results: 204
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" id="box">
+          <div class="card-header">
+            Dynamic Title
+          </div>
+          <div class="form-check">
+            <% for(var i = 1; i < 7; i++){ %>
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Phrase <%= i %>
+              </label><br>
+            <% } %>
+          </div>
+        </div>
+        <div class="card" id="box">
+          <div class="card-header">
+            Dynamic Title
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Phrase I
+            </label><br>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Phrase II
+            </label><br>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Phrase III
+            </label><br>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Phrase IV
+            </label><br>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Phrase V
+            </label><br>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Phrase VI
+            </label><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="card" style="width: 50vw;" id="card">
+          <div class="card-body">
+            <img src="..." class="card-img-top" alt="...">
+            <a href="#" class="btn btn-primary" id="flag">Comment Letter</a>
+            <h5 class="card-title">Bandwith Inc</h5>
+            <p class="card-text">Mail Stop 4561 September 12, 2017 David A. Morken Chairman and Chief Executive Officer Bandwidth.com, Inc.
+            900 Main Campus Drive Raleigh, NC 27606 Re: Bandwidth.com, Inc. Draft Registration Statement on Form S-1 Submitted August 16, 2017 CIK No. 0001514416.
+           Dear Mr. Morken: We have reviewed your draft registration statement and have the foll...</p>
+            <div class="row">
+              <a href="#" class="btn btn-primary" id="tag">Morken</a>
+              <a href="#" class="btn btn-primary" id="tag">Joyce Sweeney</a>
+              <a href="#" class="btn btn-primary" id="tag">Bandwidth.com</a>
+              <a href="#" class="btn btn-primary" id="tag">Google</a>
+            </div>
+            <div class="row">
+              <a href="#" class="btn btn-success" id="tag">Cover Page</a>
+              <a href="#" class="btn btn-success" id="tag">customers</a>
+              <a href="#" class="btn btn-success" id="tag">amended draft registration statment</a>
+              <a href="#" class="btn btn-success" id="tag">enterprises</a>
+              <a href="#" class="btn btn-success" id="tag">Morken</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 50vw;" id="card">
+          <div class="card-body">
+            <img src="..." class="card-img-top" alt="...">
+            <a href="#" class="btn btn-primary" id="flag">Exhibit</a>
+            <h5 class="card-title">Consulting Group Capital Market Funds</h5>
+            <p class="card-text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              10F-3 Report CGCM Core Fixed Income Fund 9/1/2016   through  2/28/2017
+            Issuer Name Sub-Advisor Trade Date Selling Dealer Offering Size Total Amt. Allocated Purchase Price IMS Health Incorporated...</p>
+            <div class="row">
+              <a href="#" class="btn btn-primary" id="tag">USA</a>
+              <a href="#" class="btn btn-primary" id="tag">Merrill Lynch</a>
+              <a href="#" class="btn btn-primary" id="tag">Marsh & Mclennan Companies Inc</a>
+            </div>
+            <div class="row">
+              <a href="#" class="btn btn-success" id="tag">BlackRock</a>
+              <a href="#" class="btn btn-success" id="tag">HSBC Securities</a>
+              <a href="#" class="btn btn-success" id="tag">Microsoft Corporation</a>
+              <a href="#" class="btn btn-success" id="tag">Western Asset</a>
+              <a href="#" class="btn btn-success" id="tag">Bank of America Securities</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 50vw;" id="card">
+          <div class="card-body">
+            <img src="..." class="card-img-top" alt="...">
+            <a href="#" class="btn btn-primary" id="flag">Exhibit</a>
+            <h5 class="card-title">Sand Hill Global Advisors, LLC</h5>
+            <p class="card-text">1/100 Berkshire Htwy A 100sh= COM 084990175 213 100 SH SOLE 100 0 0 3M Co. COM 88579Y101 4174 25052
+            SH SHOLE 24222 0 830 AT&T Inc COM 00206R102 4710 120239 SH SOLE 116686 0 3553 ...</p>
+            <div class="row">
+              <a href="#" class="btn btn-primary" id="tag">3M Co.</a>
+              <a href="#" class="btn btn-primary" id="tag">Alphabet Inc CI</a>
+            </div>
+            <div class="row">
+              <a href="#" class="btn btn-success" id="tag">COM</a>
+              <a href="#" class="btn btn-success" id="tag">SOLE</a>
+              <a href="#" class="btn btn-success" id="tag">Cisco Systems</a>
+              <a href="#" class="btn btn-success" id="tag">Alphabet</a>
+              <a href="#" class="btn btn-success" id="tag">17275R102</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 50vw;" id="card">
+          <div class="card-body">
+            <img src="..." class="card-img-top" alt="...">
+            <a href="#" class="btn btn-primary" id="flag">Exhibit</a>
+            <h5 class="card-title">Sand Hill Global Advisors, LLC</h5>
+            <p class="card-text">1/100 Berkshire Htwy A 100sh= COM 084990175 217 100 SH SOLE 100 0 0 3M Co. COM 88579Y101 4392 25082
+            SH SHOLE 23903 0 1179 AT&T Inc COM 00206R102 5203 120413 SH SOLE 116095 0 4318 ...</p>
+            <div class="row">
+              <a href="#" class="btn btn-primary" id="tag">3M Co.</a>
+              <a href="#" class="btn btn-primary" id="tag">Alphabet Inc CI</a>
+            </div>
+            <div class="row">
+              <a href="#" class="btn btn-success" id="tag">COM</a>
+              <a href="#" class="btn btn-success" id="tag">SOLE</a>
+              <a href="#" class="btn btn-success" id="tag">OTR</a>
+              <a href="#" class="btn btn-success" id="tag">Exxon Mobil Corporation</a>
+              <a href="#" class="btn btn-success" id="tag">Chevron Corporation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

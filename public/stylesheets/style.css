@@ -1,0 +1,48 @@
+a {
+  color: #00B7FF;
+  font-size: 1.5vw;
+  float: right;
+  margin-right: 30px;
+}
+
+.bg{
+  background-color: rgb(14,70,160);
+}
+
+#box{
+  margin: 10px;
+  width: 20vw;
+}
+
+.card-body{
+  background-color: lightgrey;
+  margin-bottom: 20px;
+}
+
+#card{
+  border: 1px solid rgb(255,255,255);
+}
+
+.center{
+  position: absolute;
+  top: 40vh;
+}
+
+#flag{
+  float: right;
+}
+
+.go{
+  background-color: rgb(22,168,61);
+}
+
+.searchContainer{
+  background: #fff
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+#tag{
+  margin: 5px;
+}
